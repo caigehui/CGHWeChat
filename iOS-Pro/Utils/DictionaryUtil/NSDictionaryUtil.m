@@ -1,11 +1,3 @@
-//
-//  NSDictionaryUtil.m
-//  EasyToo
-//
-//  Created by 郑 哲 on 9/5/13.
-//
-//
-
 #import "NSDictionaryUtil.h"
 
 @implementation NSDictionaryUtil
