@@ -3,8 +3,11 @@ a private school assginment project
 
 #Library
 ● AFNetworking
+
 ● Mantle
+
 ● SDWebImage
+
 ● ReactiveCocoa
 
 #Build Project
