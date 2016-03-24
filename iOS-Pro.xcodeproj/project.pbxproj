@@ -9,11 +9,11 @@
 /* Begin PBXBuildFile section */
 		2A7A95311CA372330088F4C2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A7A95301CA372330088F4C2 /* main.m */; };
 		2A7A95341CA372330088F4C2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A7A95331CA372330088F4C2 /* AppDelegate.m */; };
-		2A7A95371CA372330088F4C2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A7A95361CA372330088F4C2 /* ViewController.m */; };
 		2A7A953C1CA372330088F4C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A7A953B1CA372330088F4C2 /* Assets.xcassets */; };
 		2A7A953F1CA372330088F4C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A7A953D1CA372330088F4C2 /* LaunchScreen.storyboard */; };
 		2A7A954A1CA372330088F4C2 /* iOS_ProTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A7A95491CA372330088F4C2 /* iOS_ProTests.m */; };
 		2A7A95551CA372330088F4C2 /* iOS_ProUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A7A95541CA372330088F4C2 /* iOS_ProUITests.m */; };
+		2A7A956D1CA3853C0088F4C2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A7A956C1CA3853C0088F4C2 /* ViewController.m */; };
 		C45301DB1CCDE224B5222B88 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AD6FDB6895D8CC6920FEB29 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -41,8 +41,6 @@
 		2A7A95301CA372330088F4C2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2A7A95321CA372330088F4C2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2A7A95331CA372330088F4C2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		2A7A95351CA372330088F4C2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		2A7A95361CA372330088F4C2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		2A7A953B1CA372330088F4C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2A7A953E1CA372330088F4C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2A7A95401CA372330088F4C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -53,6 +51,8 @@
 		2A7A95541CA372330088F4C2 /* iOS_ProUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOS_ProUITests.m; sourceTree = "<group>"; };
 		2A7A95561CA372330088F4C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2A7A95651CA377E50088F4C2 /* iOS-Pro.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iOS-Pro.pch"; sourceTree = "<group>"; };
+		2A7A956B1CA3853C0088F4C2 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		2A7A956C1CA3853C0088F4C2 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		8AD6FDB6895D8CC6920FEB29 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -116,10 +116,13 @@
 		2A7A952E1CA372330088F4C2 /* iOS-Pro */ = {
 			isa = PBXGroup;
 			children = (
+				2A7A95681CA385180088F4C2 /* Utils */,
+				2A7A95661CA385180088F4C2 /* Managers */,
+				2A7A95671CA385180088F4C2 /* Models */,
+				2A7A95691CA385180088F4C2 /* ViewControllers */,
+				2A7A956A1CA385180088F4C2 /* ViewModels */,
 				2A7A95321CA372330088F4C2 /* AppDelegate.h */,
 				2A7A95331CA372330088F4C2 /* AppDelegate.m */,
-				2A7A95351CA372330088F4C2 /* ViewController.h */,
-				2A7A95361CA372330088F4C2 /* ViewController.m */,
 				2A7A953B1CA372330088F4C2 /* Assets.xcassets */,
 				2A7A953D1CA372330088F4C2 /* LaunchScreen.storyboard */,
 				2A7A95401CA372330088F4C2 /* Info.plist */,
@@ -153,6 +156,43 @@
 				2A7A95561CA372330088F4C2 /* Info.plist */,
 			);
 			path = "iOS-ProUITests";
+			sourceTree = "<group>";
+		};
+		2A7A95661CA385180088F4C2 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		2A7A95671CA385180088F4C2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2A7A95681CA385180088F4C2 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		2A7A95691CA385180088F4C2 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				2A7A956B1CA3853C0088F4C2 /* ViewController.h */,
+				2A7A956C1CA3853C0088F4C2 /* ViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		2A7A956A1CA385180088F4C2 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		AE3CED5E2C43CC973529333F /* Frameworks */ = {
@@ -343,7 +383,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A7A95371CA372330088F4C2 /* ViewController.m in Sources */,
+				2A7A956D1CA3853C0088F4C2 /* ViewController.m in Sources */,
 				2A7A95341CA372330088F4C2 /* AppDelegate.m in Sources */,
 				2A7A95311CA372330088F4C2 /* main.m in Sources */,
 			);
