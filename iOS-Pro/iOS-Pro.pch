@@ -16,13 +16,16 @@
 //屏幕适配
 #define kAdaptPixeliPhone6 (kScreen_Width / 375.0f)
 
+
 //获得iOS版本
 #define kIOSVersions [[[UIDevice currentDevice] systemVersion] floatValue]
+
 
 // 屏幕的宽、高
 #define kScreen_Height [UIScreen mainScreen].bounds.size.height
 #define kScreen_Width [UIScreen mainScreen].bounds.size.width
 #define kNavigationBar_Height 64
+
 
 //调试模式下输入DLog，发布后不再输入。
 #ifndef __OPTIMIZE__

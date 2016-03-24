@@ -18,7 +18,8 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    
+    //改变statusBar颜色
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
 #warning change root controller here
     ViewController *viewController = [[ViewController alloc] init];
     self.window.rootViewController = viewController;

@@ -18,6 +18,7 @@
 		2A7A95741CA386F00088F4C2 /* NSMutableDictionary+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A7A95721CA386F00088F4C2 /* NSMutableDictionary+Addition.m */; };
 		2A7A957C1CA389630088F4C2 /* UITableView+SDAutoTableViewCellHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A7A95791CA389630088F4C2 /* UITableView+SDAutoTableViewCellHeight.m */; };
 		2A7A957D1CA389630088F4C2 /* UIView+SDAutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A7A957B1CA389630088F4C2 /* UIView+SDAutoLayout.m */; };
+		2A7A95811CA39B130088F4C2 /* UINavigationController+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A7A95801CA39B130088F4C2 /* UINavigationController+FDFullscreenPopGesture.m */; };
 		C45301DB1CCDE224B5222B88 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AD6FDB6895D8CC6920FEB29 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +67,8 @@
 		2A7A95791CA389630088F4C2 /* UITableView+SDAutoTableViewCellHeight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+SDAutoTableViewCellHeight.m"; sourceTree = "<group>"; };
 		2A7A957A1CA389630088F4C2 /* UIView+SDAutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SDAutoLayout.h"; sourceTree = "<group>"; };
 		2A7A957B1CA389630088F4C2 /* UIView+SDAutoLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SDAutoLayout.m"; sourceTree = "<group>"; };
+		2A7A957F1CA39B130088F4C2 /* UINavigationController+FDFullscreenPopGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+FDFullscreenPopGesture.h"; sourceTree = "<group>"; };
+		2A7A95801CA39B130088F4C2 /* UINavigationController+FDFullscreenPopGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+FDFullscreenPopGesture.m"; sourceTree = "<group>"; };
 		8AD6FDB6895D8CC6920FEB29 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -188,6 +191,7 @@
 		2A7A95681CA385180088F4C2 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				2A7A957E1CA39B0D0088F4C2 /* FullScreenPopGesture */,
 				2A7A95771CA389030088F4C2 /* CGHAutoLayout */,
 				2A7A95751CA3878B0088F4C2 /* SingleTon */,
 				2A7A956E1CA386E90088F4C2 /* DictionaryUtil */,
@@ -239,6 +243,15 @@
 				2A7A957B1CA389630088F4C2 /* UIView+SDAutoLayout.m */,
 			);
 			path = CGHAutoLayout;
+			sourceTree = "<group>";
+		};
+		2A7A957E1CA39B0D0088F4C2 /* FullScreenPopGesture */ = {
+			isa = PBXGroup;
+			children = (
+				2A7A957F1CA39B130088F4C2 /* UINavigationController+FDFullscreenPopGesture.h */,
+				2A7A95801CA39B130088F4C2 /* UINavigationController+FDFullscreenPopGesture.m */,
+			);
+			path = FullScreenPopGesture;
 			sourceTree = "<group>";
 		};
 		AE3CED5E2C43CC973529333F /* Frameworks */ = {
@@ -431,6 +444,7 @@
 			files = (
 				2A7A956D1CA3853C0088F4C2 /* ViewController.m in Sources */,
 				2A7A957D1CA389630088F4C2 /* UIView+SDAutoLayout.m in Sources */,
+				2A7A95811CA39B130088F4C2 /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
 				2A7A95741CA386F00088F4C2 /* NSMutableDictionary+Addition.m in Sources */,
 				2A7A95341CA372330088F4C2 /* AppDelegate.m in Sources */,
 				2A7A95731CA386F00088F4C2 /* NSDictionaryUtil.m in Sources */,
