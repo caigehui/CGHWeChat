@@ -1,5 +1,5 @@
 #iOS 模仿微信的登录界面
-![Image](https://github.com/caigehui/iOS-Pro/blob/master/demo.PNG?raw=true)
+![Image](https://github.com/caigehui/iOS-Pro/blob/master/demo.gif?raw=true)
 
 
 
