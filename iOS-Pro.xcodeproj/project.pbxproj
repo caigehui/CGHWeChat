@@ -199,19 +199,16 @@
 		2A7A952E1CA372330088F4C2 /* iOS-Pro */ = {
 			isa = PBXGroup;
 			children = (
-				2ACA0D8A1CACE9E000DB6A60 /* Images */,
+				2A7A95651CA377E50088F4C2 /* iOS-Pro.pch */,
+				2A7A95321CA372330088F4C2 /* AppDelegate.h */,
+				2A7A95331CA372330088F4C2 /* AppDelegate.m */,
 				2A7A95681CA385180088F4C2 /* Utils */,
+				2ACA0D8A1CACE9E000DB6A60 /* Images */,
 				2A7A95661CA385180088F4C2 /* Managers */,
 				2A7A95671CA385180088F4C2 /* Models */,
 				2A7A95691CA385180088F4C2 /* ViewControllers */,
 				2A7A956A1CA385180088F4C2 /* ViewModels */,
-				2A7A95321CA372330088F4C2 /* AppDelegate.h */,
-				2A7A95331CA372330088F4C2 /* AppDelegate.m */,
-				2A7A953B1CA372330088F4C2 /* Assets.xcassets */,
-				2A7A953D1CA372330088F4C2 /* LaunchScreen.storyboard */,
-				2A7A95401CA372330088F4C2 /* Info.plist */,
 				2A7A952F1CA372330088F4C2 /* Supporting Files */,
-				2A7A95651CA377E50088F4C2 /* iOS-Pro.pch */,
 			);
 			path = "iOS-Pro";
 			sourceTree = "<group>";
@@ -219,6 +216,9 @@
 		2A7A952F1CA372330088F4C2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2A7A953B1CA372330088F4C2 /* Assets.xcassets */,
+				2A7A953D1CA372330088F4C2 /* LaunchScreen.storyboard */,
+				2A7A95401CA372330088F4C2 /* Info.plist */,
 				2A7A95301CA372330088F4C2 /* main.m */,
 			);
 			name = "Supporting Files";
