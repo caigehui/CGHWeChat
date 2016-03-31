@@ -25,7 +25,7 @@
     //改变statusBar颜色
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault];
 #warning change root controller here
-    LoginViewController *viewController = [[LoginViewController alloc] init];
+    LoginViewController *viewController = [[LoginViewController alloc] initWithType:LoginTypeDefault];
     self.window.rootViewController = viewController;
     [self.window makeKeyAndVisible];
     

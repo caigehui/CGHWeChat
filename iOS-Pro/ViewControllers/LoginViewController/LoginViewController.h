@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+typedef NS_ENUM(NSUInteger, LoginType) {
+    LoginTypeDefault,
+    LoginTypeSwitchAccount
+};
+
 @interface LoginViewController : UIViewController
+
+- (instancetype)initWithType:(LoginType)loginType;
 
 @end

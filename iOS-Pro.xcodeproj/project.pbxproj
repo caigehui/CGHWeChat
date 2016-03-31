@@ -41,6 +41,7 @@
 		2AF564091CACFED9002C1B70 /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AF564041CACFED9002C1B70 /* SVIndefiniteAnimatedView.m */; };
 		2AF5640A1CACFED9002C1B70 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2AF564061CACFED9002C1B70 /* SVProgressHUD.bundle */; };
 		2AF5640B1CACFED9002C1B70 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AF564081CACFED9002C1B70 /* SVProgressHUD.m */; };
+		2AF5640F1CAD43E4002C1B70 /* PQActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AF5640E1CAD43E4002C1B70 /* PQActionSheet.m */; };
 		C45301DB1CCDE224B5222B88 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AD6FDB6895D8CC6920FEB29 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -136,6 +137,8 @@
 		2AF564061CACFED9002C1B70 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
 		2AF564071CACFED9002C1B70 /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
 		2AF564081CACFED9002C1B70 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
+		2AF5640D1CAD43E4002C1B70 /* PQActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PQActionSheet.h; sourceTree = "<group>"; };
+		2AF5640E1CAD43E4002C1B70 /* PQActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PQActionSheet.m; sourceTree = "<group>"; };
 		8AD6FDB6895D8CC6920FEB29 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -265,6 +268,7 @@
 		2A7A95681CA385180088F4C2 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				2AF5640C1CAD43E4002C1B70 /* PQActionSheet */,
 				2AF564021CACFED9002C1B70 /* SVProgressHUD */,
 				2AF563F41CACFB0B002C1B70 /* KeyboardManager */,
 				2ACA0D4F1CACE46800DB6A60 /* JSON */,
@@ -279,7 +283,6 @@
 		2A7A95691CA385180088F4C2 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				2ACA0D831CACE7BB00DB6A60 /* BaseViewController */,
 				2ACA0D821CACE79200DB6A60 /* LoginViewController */,
 			);
 			path = ViewControllers;
@@ -377,13 +380,6 @@
 			path = LoginViewController;
 			sourceTree = "<group>";
 		};
-		2ACA0D831CACE7BB00DB6A60 /* BaseViewController */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = BaseViewController;
-			sourceTree = "<group>";
-		};
 		2ACA0D8A1CACE9E000DB6A60 /* Images */ = {
 			isa = PBXGroup;
 			children = (
@@ -412,6 +408,15 @@
 				2AF564081CACFED9002C1B70 /* SVProgressHUD.m */,
 			);
 			path = SVProgressHUD;
+			sourceTree = "<group>";
+		};
+		2AF5640C1CAD43E4002C1B70 /* PQActionSheet */ = {
+			isa = PBXGroup;
+			children = (
+				2AF5640D1CAD43E4002C1B70 /* PQActionSheet.h */,
+				2AF5640E1CAD43E4002C1B70 /* PQActionSheet.m */,
+			);
+			path = PQActionSheet;
 			sourceTree = "<group>";
 		};
 		AE3CED5E2C43CC973529333F /* Frameworks */ = {
@@ -627,6 +632,7 @@
 				2ACA0D6C1CACE46800DB6A60 /* NSObject+SBJson.m in Sources */,
 				2AF564091CACFED9002C1B70 /* SVIndefiniteAnimatedView.m in Sources */,
 				2ACA0D6E1CACE46800DB6A60 /* SBJsonParser.m in Sources */,
+				2AF5640F1CAD43E4002C1B70 /* PQActionSheet.m in Sources */,
 				2ACA0D711CACE46800DB6A60 /* SBJsonStreamParserAdapter.m in Sources */,
 				2A7A95311CA372330088F4C2 /* main.m in Sources */,
 				2ACA0D721CACE46800DB6A60 /* SBJsonStreamParserState.m in Sources */,
