@@ -105,9 +105,12 @@
                                                                       }]]
                                                             reduce:^id(NSNumber *usernameTextLength, NSNumber *passwordTextLength){
                                                                 
-                                                                [_loginBtn setTitleColor:[usernameTextLength integerValue] !=0 && [passwordTextLength integerValue] >= 8?[UIColor whiteColor]:[UIColor colorWithWhite:0.9 alpha:1] forState:UIControlStateNormal];
-                                                                [_loginBtn setEnabled:[usernameTextLength integerValue] !=0 && [passwordTextLength integerValue] >= 8];
-                                                                return [usernameTextLength integerValue] >0 && [passwordTextLength integerValue] >= 8?CustomColor(42, 182, 8, 1):CustomColor(91, 211, 85, 1);
+                                                                BOOL valid = [usernameTextLength integerValue] !=0 && [passwordTextLength integerValue] >= 8;
+                                                                
+                                                                [_loginBtn setTitleColor:valid?[UIColor whiteColor]:[UIColor colorWithWhite:0.9 alpha:1] forState:UIControlStateNormal];
+                                                                [_loginBtn setEnabled:valid];
+                                                                
+                                                                return valid?CustomColor(42, 182, 8, 1):CustomColor(91, 211, 85, 1);
                                                             }];
     }
 }
@@ -399,11 +402,11 @@
         @weakify(self);
         _loginViewModel = [[LoginViewModel alloc] initWithLoginSuccess:^{
             @strongify(self);
-            //跳转
+            //跳转视图控制器
+            //
             _loginBtn.enabled = YES;
             NSLog(@"登录成功!");
         } failure:^(NSString *msg) {
-            @strongify(self);
             //失败处理
             _loginBtn.enabled = YES;
             NSLog(@"登录失败!");
