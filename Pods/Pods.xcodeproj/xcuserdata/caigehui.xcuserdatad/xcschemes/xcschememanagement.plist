@@ -4,12 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>AFNetworking.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Mantle.xcscheme</key>
+		<key>IQKeyboardManager.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -24,7 +19,7 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>SDWebImage.xcscheme</key>
+		<key>SDAutoLayout.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -32,27 +27,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0AC33F68C3A8242243C80E71ECA4A0CB</key>
+		<key>0CBC420B5E5B7256B7654BB117417D07</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>410B25DF16EA5C5B3E2698F74F9625FB</key>
+		<key>55DBDD8B7D446F1D618F303A9FB53209</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>426BC4549A625B5E1E4200D5261A98BF</key>
+		<key>B635A10DFBD36E79B5E2DF417FC258C3</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4873CAE0916A1B4DF69A8D7E8A7986BC</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>8C47D30AE5170688679FCA22CFA3B3D7</key>
+		<key>D89EFEB5FAC47D0AE6AED1503989FD4D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
