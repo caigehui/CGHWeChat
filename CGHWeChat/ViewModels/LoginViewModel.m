@@ -33,8 +33,12 @@
             dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
                 [SVProgressHUD dismiss];
                 [SVProgressHUD showSuccessWithStatus:@"登录成功" maskType:SVProgressHUDMaskTypeBlack];
-                [subscriber sendNext:LoginSuccessMsg];
-                [subscriber sendCompleted];
+                dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                    
+                    [SVProgressHUD dismiss];
+                    [subscriber sendNext:LoginSuccessMsg];
+                    [subscriber sendCompleted];
+                });
                 
                 
             });

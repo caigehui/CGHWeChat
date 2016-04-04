@@ -25,7 +25,8 @@
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     //改变statusBar颜色
-    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault];
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault animated:YES];
+    
     LoginViewController *viewController = [[LoginViewController alloc] initWithType:LoginTypeDefault];
     self.window.rootViewController = viewController;
     [self.window makeKeyAndVisible];

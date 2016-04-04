@@ -11,7 +11,7 @@
 #define LoginSuccessMsg @"登陆成功"
 
 @interface LoginViewModel : NSObject
-;
+
 
 @property (nonatomic, copy) NSString *username;
 @property (nonatomic, copy) NSString *password;

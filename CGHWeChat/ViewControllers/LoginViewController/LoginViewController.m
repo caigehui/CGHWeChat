@@ -7,6 +7,7 @@
 //
 
 #import "LoginViewController.h"
+#import "RootTabBarController.h"
 #import "LoginViewModel.h"
 #import "PQActionSheet.h"
 #import "Config.h"
@@ -88,6 +89,10 @@
     [self.loginViewModel.loginCommand.executionSignals.switchToLatest subscribeNext:^(NSString *msg) {
         
         if ([msg isEqualToString:LoginSuccessMsg]) {
+            
+            RootTabBarController *rootTabBarController = [[RootTabBarController alloc] init];
+            rootTabBarController.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+            [weakself presentViewController:rootTabBarController animated:YES completion:nil];
             
         }else {
             
