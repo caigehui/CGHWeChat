@@ -7,17 +7,40 @@
 //
 
 #import "SearchController.h"
-
+#import "SearchViewController.h"
+#import "ColorConfig.h"
 @interface SearchController ()
 
 @end
 
 @implementation SearchController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
+#pragma mark - life cycle
+
+- (instancetype)init
+{
+    return [super initWithSearchResultsController:[[SearchViewController alloc] init]];
 }
 
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+    [self.searchBar setPlaceholder:@"搜索"];
+    [self.searchBar setTintColor:GREEN_COLOR];
+    [self.searchBar setBarTintColor:SEARCHBAR_COLOR];
+    [self.searchBar sizeToFit];
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault animated:YES];
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent animated:YES];
+}
 
 @end

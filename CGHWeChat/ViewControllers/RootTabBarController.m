@@ -9,6 +9,7 @@
 #import "RootTabBarController.h"
 #import "ColorConfig.h"
 #import "BaseNavigationController.h"
+#import "ChatTableViewController.h"
 @interface RootTabBarController ()
 
 @end
@@ -36,12 +37,13 @@
 {
     NSMutableArray *childsArray = [[NSMutableArray alloc] initWithCapacity:5];
     
-    UIViewController *weChatVC = [[UIViewController alloc] init];
-    [weChatVC.tabBarItem setTitle:@"微信"];
-    [weChatVC.tabBarItem setImage:[UIImage imageNamed:@"tabbar_mainframe"]];
-    [weChatVC.tabBarItem setSelectedImage:[UIImage imageNamed:@"tabbar_mainframeHL"]];
-    BaseNavigationController *weChatNVC = [[BaseNavigationController alloc] initWithRootViewController:weChatVC];
-    [childsArray addObject:weChatNVC];
+    ChatTableViewController *chatVC = [[ChatTableViewController alloc] init];
+    [chatVC.tabBarItem setTitle:@"微信"];
+    [chatVC.tabBarItem setImage:[UIImage imageNamed:@"tabbar_mainframe"]];
+    [chatVC.tabBarItem setSelectedImage:[UIImage imageNamed:@"tabbar_mainframeHL"]];
+    BaseNavigationController *chatNVC = [[BaseNavigationController alloc] initWithRootViewController:chatVC];
+    [childsArray addObject:chatNVC];
+    
     
     UIViewController *contactsVC = [[UIViewController alloc] init];
     [contactsVC.tabBarItem setTitle:@"通讯录"];
