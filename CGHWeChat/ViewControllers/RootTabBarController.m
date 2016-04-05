@@ -17,14 +17,19 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    //改变StatusBar颜色
-    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent animated:YES];
     
     self.view.backgroundColor = BACKGROUND_COLOR;
     self.tabBar.tintColor = GREEN_COLOR;
     self.tabBar.backgroundColor = TABBAR_COLOR;
     
     [self addChildViewController];
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    //改变StatusBar颜色
+    [super viewWillAppear:animated];
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent animated:YES];
 }
 
 - (void)addChildViewController

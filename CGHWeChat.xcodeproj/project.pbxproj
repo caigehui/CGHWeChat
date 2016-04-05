@@ -12,6 +12,7 @@
 		2AAB42411CB0C69000590DBF /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AAB423E1CB0C69000590DBF /* SVProgressHUD.m */; };
 		2AAB42441CB2031E00590DBF /* RootTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AAB42431CB2031E00590DBF /* RootTabBarController.m */; };
 		2AAB42471CB203AF00590DBF /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AAB42461CB203AF00590DBF /* BaseNavigationController.m */; };
+		2AAB42501CB3485400590DBF /* SearchController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AAB424F1CB3485400590DBF /* SearchController.m */; };
 		2AF564211CAF6D83002C1B70 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AF564201CAF6D83002C1B70 /* main.m */; };
 		2AF564241CAF6D83002C1B70 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AF564231CAF6D83002C1B70 /* AppDelegate.m */; };
 		2AF564831CAF8C69002C1B70 /* headImage.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 2AF564371CAF8C69002C1B70 /* headImage.JPG */; };
@@ -38,6 +39,8 @@
 		2AAB42451CB203AF00590DBF /* BaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
 		2AAB42461CB203AF00590DBF /* BaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
 		2AAB42481CB203F600590DBF /* ColorConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColorConfig.h; sourceTree = "<group>"; };
+		2AAB424E1CB3485400590DBF /* SearchController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchController.h; sourceTree = "<group>"; };
+		2AAB424F1CB3485400590DBF /* SearchController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchController.m; sourceTree = "<group>"; };
 		2AF5641C1CAF6D83002C1B70 /* CGHWeChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CGHWeChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AF564201CAF6D83002C1B70 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2AF564221CAF6D83002C1B70 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -90,6 +93,43 @@
 				2AAB423E1CB0C69000590DBF /* SVProgressHUD.m */,
 			);
 			path = SVProgressHUD;
+			sourceTree = "<group>";
+		};
+		2AAB42491CB345A100590DBF /* WeChat */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = WeChat;
+			sourceTree = "<group>";
+		};
+		2AAB424A1CB345CE00590DBF /* Me */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Me;
+			sourceTree = "<group>";
+		};
+		2AAB424B1CB345D600590DBF /* Contacts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Contacts;
+			sourceTree = "<group>";
+		};
+		2AAB424C1CB345DB00590DBF /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Discover;
+			sourceTree = "<group>";
+		};
+		2AAB424D1CB3463200590DBF /* BaseControllers */ = {
+			isa = PBXGroup;
+			children = (
+				2AAB424E1CB3485400590DBF /* SearchController.h */,
+				2AAB424F1CB3485400590DBF /* SearchController.m */,
+			);
+			path = BaseControllers;
 			sourceTree = "<group>";
 		};
 		2AF564131CAF6D83002C1B70 = {
@@ -192,6 +232,11 @@
 				2AAB42451CB203AF00590DBF /* BaseNavigationController.h */,
 				2AAB42461CB203AF00590DBF /* BaseNavigationController.m */,
 				2AF5647D1CAF8C69002C1B70 /* LoginViewController */,
+				2AAB42491CB345A100590DBF /* WeChat */,
+				2AAB424B1CB345D600590DBF /* Contacts */,
+				2AAB424C1CB345DB00590DBF /* Discover */,
+				2AAB424A1CB345CE00590DBF /* Me */,
+				2AAB424D1CB3463200590DBF /* BaseControllers */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -355,6 +400,7 @@
 				2AF5649E1CAF8C69002C1B70 /* LoginViewController.m in Sources */,
 				2AAB42471CB203AF00590DBF /* BaseNavigationController.m in Sources */,
 				2AAB42441CB2031E00590DBF /* RootTabBarController.m in Sources */,
+				2AAB42501CB3485400590DBF /* SearchController.m in Sources */,
 				2AF5648A1CAF8C69002C1B70 /* NSMutableDictionary+Addition.m in Sources */,
 				2AF5649F1CAF8C69002C1B70 /* LoginViewModel.m in Sources */,
 				2AAB423F1CB0C69000590DBF /* SVIndefiniteAnimatedView.m in Sources */,
