@@ -24,11 +24,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    [self.searchBar setPlaceholder:@"搜索"];
-    [self.searchBar setTintColor:GREEN_COLOR];
-    [self.searchBar setBarTintColor:SEARCHBAR_COLOR];
-    [self.searchBar sizeToFit];
 }
 
 - (void)viewWillAppear:(BOOL)animated

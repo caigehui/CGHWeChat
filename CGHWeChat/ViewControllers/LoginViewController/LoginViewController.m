@@ -12,6 +12,7 @@
 #import "PQActionSheet.h"
 #import "Config.h"
 #import "UIView+SDAutoLayout.h"
+#import "IQKeyboardManager.h"
 @interface LoginViewController ()
 
 @property (nonatomic, strong) UIScrollView *scrollView;
@@ -196,6 +197,7 @@
         @weakify(self)
         [[helpBtn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(id x) {
             @strongify(self)
+            [[IQKeyboardManager sharedManager] resignFirstResponder];
             [self.helpActionSheet show];
         }];
         
@@ -208,6 +210,7 @@
         [[moreBtn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(id x) {
             
             @strongify(self);
+            [[IQKeyboardManager sharedManager] resignFirstResponder];
             [self.moreActionSheet show];
         }];
         
@@ -337,6 +340,7 @@
         @weakify(self)
         [[helpBtn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(id x) {
             @strongify(self)
+            [[IQKeyboardManager sharedManager] resignFirstResponder];
             [self.helpActionSheet show];
         }];
         
